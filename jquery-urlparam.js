@@ -1,3 +1,7 @@
+// jquery-urlparam
+// version 0.1
+// https://github.com/huochunpeng/jquery-urlparam
+
 (function($, document) {
 	if (! $.urlparam) {
 		$.urlparam = function(key) {
