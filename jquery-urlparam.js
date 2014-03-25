@@ -17,7 +17,7 @@
 				for (var i = 0, cnt = pairs.length; i < cnt; i++) {
 					var p = pairs[i].split('=');
 					var pKey = decodeURIComponent(p[0]);
-					var pValue = p[1]?decodeURIComponent(p[1]):'';
+					var pValue = p[1]?decodeURIComponent(p[1].replace(/\+/g, ' ')):'';
 					if (params.hasOwnProperty(pKey)) {
 						var ex = params[pKey];
 						if ($.isArray(ex)) {
